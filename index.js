@@ -183,7 +183,7 @@ app.post("/login", async (req, resp) => {
     }
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`NextGen-Hire Server is running on port ${PORT}`);
 });
